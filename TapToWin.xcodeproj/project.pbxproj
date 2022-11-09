@@ -3,22 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DFCAB6F12916939F00DBCFE4 /* TapToWinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F02916939F00DBCFE4 /* TapToWinApp.swift */; };
-		DFCAB6F32916939F00DBCFE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F22916939F00DBCFE4 /* ContentView.swift */; };
+		953CA1C503E66AB67372E20E /* Pods_TapToWin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021FD6FC90810BE9804DDE30 /* Pods_TapToWin.framework */; };
+		DF13B19D2916FF58005474D2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13B19C2916FF58005474D2 /* GameScene.swift */; };
+		DFC40E5829196CDD0009C733 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC40E5729196CDD0009C733 /* BannerAd.swift */; };
+		DFCAB6F12916939F00DBCFE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F02916939F00DBCFE4 /* ContentView.swift */; };
+		DFCAB6F32916939F00DBCFE4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F22916939F00DBCFE4 /* HomeView.swift */; };
 		DFCAB6F5291693A100DBCFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFCAB6F4291693A100DBCFE4 /* Assets.xcassets */; };
 		DFCAB6F8291693A100DBCFE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFCAB6F7291693A100DBCFE4 /* Preview Assets.xcassets */; };
+		DFCAB700291697BE00DBCFE4 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6FF291697BE00DBCFE4 /* GameView.swift */; };
+		DFCAB7032916994F00DBCFE4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB7022916994F00DBCFE4 /* Button.swift */; };
+		DFCAB7062916A01400DBCFE4 /* DifficultySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB7052916A01400DBCFE4 /* DifficultySelector.swift */; };
+		DFCAB7082916A18200DBCFE4 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB7072916A18200DBCFE4 /* GameViewModel.swift */; };
+		DFE8321829184D2600D1856A /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8321729184D2600D1856A /* WinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021FD6FC90810BE9804DDE30 /* Pods_TapToWin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapToWin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		957E927FA13B2DBE2270153E /* Pods-TapToWin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapToWin.debug.xcconfig"; path = "Target Support Files/Pods-TapToWin/Pods-TapToWin.debug.xcconfig"; sourceTree = "<group>"; };
+		DF13B19C2916FF58005474D2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../../../../Downloads/GameScene.swift; sourceTree = "<group>"; };
+		DFC40E5429196C000009C733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFC40E5729196CDD0009C733 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		DFCAB6ED2916939F00DBCFE4 /* TapToWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapToWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFCAB6F02916939F00DBCFE4 /* TapToWinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToWinApp.swift; sourceTree = "<group>"; };
-		DFCAB6F22916939F00DBCFE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DFCAB6F02916939F00DBCFE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DFCAB6F22916939F00DBCFE4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DFCAB6F4291693A100DBCFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFCAB6F7291693A100DBCFE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFCAB6FF291697BE00DBCFE4 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		DFCAB7022916994F00DBCFE4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		DFCAB7052916A01400DBCFE4 /* DifficultySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySelector.swift; sourceTree = "<group>"; };
+		DFCAB7072916A18200DBCFE4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		DFE8321729184D2600D1856A /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
+		EDBC2CFD04F396F1E58BC1AE /* Pods-TapToWin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapToWin.release.xcconfig"; path = "Target Support Files/Pods-TapToWin/Pods-TapToWin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +45,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953CA1C503E66AB67372E20E /* Pods_TapToWin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		602BE0A236AD007BEE250233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				021FD6FC90810BE9804DDE30 /* Pods_TapToWin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		973D009E824746F7E3735FA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				957E927FA13B2DBE2270153E /* Pods-TapToWin.debug.xcconfig */,
+				EDBC2CFD04F396F1E58BC1AE /* Pods-TapToWin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFC40E5529196CC30009C733 /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				DFC40E5729196CDD0009C733 /* BannerAd.swift */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
 		DFCAB6E42916939F00DBCFE4 = {
 			isa = PBXGroup;
 			children = (
 				DFCAB6EF2916939F00DBCFE4 /* TapToWin */,
 				DFCAB6EE2916939F00DBCFE4 /* Products */,
+				973D009E824746F7E3735FA1 /* Pods */,
+				602BE0A236AD007BEE250233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +98,16 @@
 		DFCAB6EF2916939F00DBCFE4 /* TapToWin */ = {
 			isa = PBXGroup;
 			children = (
-				DFCAB6F02916939F00DBCFE4 /* TapToWinApp.swift */,
-				DFCAB6F22916939F00DBCFE4 /* ContentView.swift */,
+				DFC40E5529196CC30009C733 /* AdMob */,
+				DFC40E5429196C000009C733 /* Info.plist */,
+				DFCAB7042916A00300DBCFE4 /* DifficultuSelector */,
+				DFCAB7012916994600DBCFE4 /* Components */,
+				DFCAB6FE291697B400DBCFE4 /* Game */,
+				DFCAB6F02916939F00DBCFE4 /* ContentView.swift */,
+				DFCAB6F22916939F00DBCFE4 /* HomeView.swift */,
 				DFCAB6F4291693A100DBCFE4 /* Assets.xcassets */,
 				DFCAB6F6291693A100DBCFE4 /* Preview Content */,
+				DFCAB7072916A18200DBCFE4 /* GameViewModel.swift */,
 			);
 			path = TapToWin;
 			sourceTree = "<group>";
@@ -67,6 +120,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DFCAB6FE291697B400DBCFE4 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				DFCAB6FF291697BE00DBCFE4 /* GameView.swift */,
+				DF13B19C2916FF58005474D2 /* GameScene.swift */,
+				DFE8321729184D2600D1856A /* WinView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		DFCAB7012916994600DBCFE4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DFCAB7022916994F00DBCFE4 /* Button.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DFCAB7042916A00300DBCFE4 /* DifficultuSelector */ = {
+			isa = PBXGroup;
+			children = (
+				DFCAB7052916A01400DBCFE4 /* DifficultySelector.swift */,
+			);
+			path = DifficultuSelector;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFCAB6FB291693A100DBCFE4 /* Build configuration list for PBXNativeTarget "TapToWin" */;
 			buildPhases = (
+				DDB18B60047673F9092EF334 /* [CP] Check Pods Manifest.lock */,
 				DFCAB6E92916939F00DBCFE4 /* Sources */,
 				DFCAB6EA2916939F00DBCFE4 /* Frameworks */,
 				DFCAB6EB2916939F00DBCFE4 /* Resources */,
+				F99D70E5FA45BB3138F76C65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +184,7 @@
 				};
 			};
 			buildConfigurationList = DFCAB6E82916939F00DBCFE4 /* Build configuration list for PBXProject "TapToWin" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,13 +213,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DDB18B60047673F9092EF334 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapToWin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F99D70E5FA45BB3138F76C65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapToWin/Pods-TapToWin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapToWin/Pods-TapToWin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TapToWin/Pods-TapToWin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFCAB6E92916939F00DBCFE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCAB6F32916939F00DBCFE4 /* ContentView.swift in Sources */,
-				DFCAB6F12916939F00DBCFE4 /* TapToWinApp.swift in Sources */,
+				DFCAB7082916A18200DBCFE4 /* GameViewModel.swift in Sources */,
+				DFE8321829184D2600D1856A /* WinView.swift in Sources */,
+				DFCAB6F32916939F00DBCFE4 /* HomeView.swift in Sources */,
+				DFCAB700291697BE00DBCFE4 /* GameView.swift in Sources */,
+				DFC40E5829196CDD0009C733 /* BannerAd.swift in Sources */,
+				DFCAB6F12916939F00DBCFE4 /* ContentView.swift in Sources */,
+				DFCAB7062916A01400DBCFE4 /* DifficultySelector.swift in Sources */,
+				DF13B19D2916FF58005474D2 /* GameScene.swift in Sources */,
+				DFCAB7032916994F00DBCFE4 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +309,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -239,6 +370,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -261,59 +393,75 @@
 		};
 		DFCAB6FC291693A100DBCFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957E927FA13B2DBE2270153E /* Pods-TapToWin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TapToWin/Preview Content\"";
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapToWin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap To Win";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.TapToWin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DFCAB6FD291693A100DBCFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBC2CFD04F396F1E58BC1AE /* Pods-TapToWin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TapToWin/Preview Content\"";
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapToWin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap To Win";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.TapToWin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
