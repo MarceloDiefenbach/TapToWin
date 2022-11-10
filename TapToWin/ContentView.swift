@@ -11,6 +11,7 @@ import SwiftUI
 struct TapToWinApp: App {
     
     @StateObject private var viewModel: GameViewModel = GameViewModel()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
         WindowGroup {

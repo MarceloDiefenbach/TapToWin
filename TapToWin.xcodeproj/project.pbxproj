@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		953CA1C503E66AB67372E20E /* Pods_TapToWin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021FD6FC90810BE9804DDE30 /* Pods_TapToWin.framework */; };
 		DF13B19D2916FF58005474D2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13B19C2916FF58005474D2 /* GameScene.swift */; };
+		DF6A50E7291D414A0079341B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF6A50E6291D414A0079341B /* GoogleService-Info.plist */; };
+		DF6A50E9291D42620079341B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A50E8291D42620079341B /* AppDelegate.swift */; };
 		DFC40E5829196CDD0009C733 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC40E5729196CDD0009C733 /* BannerAd.swift */; };
 		DFCAB6F12916939F00DBCFE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F02916939F00DBCFE4 /* ContentView.swift */; };
 		DFCAB6F32916939F00DBCFE4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F22916939F00DBCFE4 /* HomeView.swift */; };
@@ -25,6 +27,8 @@
 		021FD6FC90810BE9804DDE30 /* Pods_TapToWin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapToWin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957E927FA13B2DBE2270153E /* Pods-TapToWin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapToWin.debug.xcconfig"; path = "Target Support Files/Pods-TapToWin/Pods-TapToWin.debug.xcconfig"; sourceTree = "<group>"; };
 		DF13B19C2916FF58005474D2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../../../../Downloads/GameScene.swift; sourceTree = "<group>"; };
+		DF6A50E6291D414A0079341B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF6A50E8291D42620079341B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC40E5429196C000009C733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DFC40E5729196CDD0009C733 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		DFCAB6ED2916939F00DBCFE4 /* TapToWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapToWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,7 @@
 		DFCAB6E42916939F00DBCFE4 = {
 			isa = PBXGroup;
 			children = (
+				DF6A50E6291D414A0079341B /* GoogleService-Info.plist */,
 				DFCAB6EF2916939F00DBCFE4 /* TapToWin */,
 				DFCAB6EE2916939F00DBCFE4 /* Products */,
 				973D009E824746F7E3735FA1 /* Pods */,
@@ -108,6 +113,7 @@
 				DFCAB6F4291693A100DBCFE4 /* Assets.xcassets */,
 				DFCAB6F6291693A100DBCFE4 /* Preview Content */,
 				DFCAB7072916A18200DBCFE4 /* GameViewModel.swift */,
+				DF6A50E8291D42620079341B /* AppDelegate.swift */,
 			);
 			path = TapToWin;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFCAB6F8291693A100DBCFE4 /* Preview Assets.xcassets in Resources */,
+				DF6A50E7291D414A0079341B /* GoogleService-Info.plist in Resources */,
 				DFCAB6F5291693A100DBCFE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +275,7 @@
 				DFCAB6F12916939F00DBCFE4 /* ContentView.swift in Sources */,
 				DFCAB7062916A01400DBCFE4 /* DifficultySelector.swift in Sources */,
 				DF13B19D2916FF58005474D2 /* GameScene.swift in Sources */,
+				DF6A50E9291D42620079341B /* AppDelegate.swift in Sources */,
 				DFCAB7032916994F00DBCFE4 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

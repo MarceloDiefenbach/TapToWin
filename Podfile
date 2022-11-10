@@ -7,5 +7,6 @@ target 'TapToWin' do
 
   # Pods for TapToWin
   pod 'Google-Mobile-Ads-SDK'
+  pod 'FirebaseAnalytics'
   
 end
