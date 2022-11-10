@@ -29,12 +29,14 @@ struct WinView: View {
                 ButtonComponent(text: "Restart", variant: .white, action: {
                     viewModel.difficulty = .medium
                     viewModel.isPresentingView = .difficultySelector
+                    viewModel.restartGame()
                 })
                 .padding(.top, UIScreen.main.bounds.height*0.3)
                 
                 ButtonComponent(text: "Back to menu", variant: .clearWhite, action: {
                     viewModel.difficulty = .hard
                     viewModel.isPresentingView = .home
+                    viewModel.restartGame()
                 })
                            
             }

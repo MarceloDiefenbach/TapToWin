@@ -57,6 +57,7 @@ struct GameView: View {
             VStack {
                 Spacer()
                 BannerAd(unitID: viewModel.AdMobBannerCode).frame(height: 50)
+                Spacer()
             }
         }
     }

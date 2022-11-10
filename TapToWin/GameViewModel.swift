@@ -30,4 +30,8 @@ class GameViewModel: ObservableObject {
         }
     }
     
+    func restartGame() {
+        points = 0
+    }
+    
 }
