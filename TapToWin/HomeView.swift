@@ -14,20 +14,22 @@ struct HomeView: View {
     
     @EnvironmentObject var viewModel: GameViewModel
     
+    @State var isShowingOtherApps: Bool = false
+    
     //Use init() in place of ApplicationDidFinishLaunchWithOptions in App Delegate
-    init() {
-        if ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
-            //User has not indicated their choice for app tracking
-            //You may want to show a pop-up explaining why you are collecting their data
-            //Toggle any variables to do this here
-        } else {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                //Whether or not user has opted in initialize GADMobileAds here it will handle the rest
-                                                            
-                GADMobileAds.sharedInstance().start(completionHandler: nil)
-            }
-        }
-    }
+//    init() {
+//        if ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
+//            //User has not indicated their choice for app tracking
+//            //You may want to show a pop-up explaining why you are collecting their data
+//            //Toggle any variables to do this here
+//        } else {
+//            ATTrackingManager.requestTrackingAuthorization { status in
+//                //Whether or not user has opted in initialize GADMobileAds here it will handle the rest
+//                                                            
+//                GADMobileAds.sharedInstance().start(completionHandler: nil)
+//            }
+//        }
+//    }
     
     var body: some View {
         NavigationView {
@@ -48,12 +50,32 @@ struct HomeView: View {
                         viewModel.isPresentingView = .difficultySelector
                     }).padding(.horizontal, 20)
                     .padding(.bottom, UIScreen.main.bounds.height*0.02)
+                    HStack {
+                        Image(systemName: "app.gift")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 16, height: 16)
+                            .foregroundColor(Color.white)
+                        Text("More games")
+                            .font(.system(size: 16, weight: .bold))
+                            .foregroundColor(Color.white)
+                        
+                    }
+                    .padding(.all, 4)
+                    .onTapGesture {
+                        isShowingOtherApps = true
+                    }
+                    .padding(.bottom, UIScreen.main.bounds.height*0.05)
                     BannerAd(unitID: viewModel.AdMobBannerCode)
                         .frame(height: 90)
                     .padding(.bottom, UIScreen.main.bounds.height*0.03)
                 }.padding(.horizontal, 20)
             }
-        }.preferredColorScheme(.dark)
+        }
+        .preferredColorScheme(.dark)
+        .sheet(isPresented: $isShowingOtherApps, content: {
+            OtherApps()
+        })
     }
 }
 

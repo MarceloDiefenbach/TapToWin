@@ -11,6 +11,7 @@
 		DF13B19D2916FF58005474D2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13B19C2916FF58005474D2 /* GameScene.swift */; };
 		DF6A50E7291D414A0079341B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF6A50E6291D414A0079341B /* GoogleService-Info.plist */; };
 		DF6A50E9291D42620079341B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A50E8291D42620079341B /* AppDelegate.swift */; };
+		DF7FBC8C291E806300AF7928 /* OtherAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FBC8B291E806300AF7928 /* OtherAppsView.swift */; };
 		DFC40E5829196CDD0009C733 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC40E5729196CDD0009C733 /* BannerAd.swift */; };
 		DFCAB6F12916939F00DBCFE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F02916939F00DBCFE4 /* ContentView.swift */; };
 		DFCAB6F32916939F00DBCFE4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB6F22916939F00DBCFE4 /* HomeView.swift */; };
@@ -29,6 +30,7 @@
 		DF13B19C2916FF58005474D2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../../../../Downloads/GameScene.swift; sourceTree = "<group>"; };
 		DF6A50E6291D414A0079341B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF6A50E8291D42620079341B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF7FBC8B291E806300AF7928 /* OtherAppsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAppsView.swift; sourceTree = "<group>"; };
 		DFC40E5429196C000009C733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DFC40E5729196CDD0009C733 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		DFCAB6ED2916939F00DBCFE4 /* TapToWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapToWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DF7FBC8A291E806300AF7928 /* OtherApps */ = {
+			isa = PBXGroup;
+			children = (
+				DF7FBC8B291E806300AF7928 /* OtherAppsView.swift */,
+			);
+			path = OtherApps;
+			sourceTree = "<group>";
+		};
 		DFC40E5529196CC30009C733 /* AdMob */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 			children = (
 				DFC40E5529196CC30009C733 /* AdMob */,
 				DFC40E5429196C000009C733 /* Info.plist */,
+				DF7FBC8A291E806300AF7928 /* OtherApps */,
 				DFCAB7042916A00300DBCFE4 /* DifficultuSelector */,
 				DFCAB7012916994600DBCFE4 /* Components */,
 				DFCAB6FE291697B400DBCFE4 /* Game */,
@@ -267,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF7FBC8C291E806300AF7928 /* OtherAppsView.swift in Sources */,
 				DFCAB7082916A18200DBCFE4 /* GameViewModel.swift in Sources */,
 				DFE8321829184D2600D1856A /* WinView.swift in Sources */,
 				DFCAB6F32916939F00DBCFE4 /* HomeView.swift in Sources */,
@@ -406,7 +418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"TapToWin/Preview Content\"";
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_PREVIEWS = YES;
@@ -424,7 +436,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.TapToWin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -443,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"TapToWin/Preview Content\"";
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_PREVIEWS = YES;
@@ -461,7 +473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.TapToWin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
