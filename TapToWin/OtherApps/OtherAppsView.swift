@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import FirebaseAnalytics
 
 struct OtherApps: View {
     
     @Environment(\.presentationMode) var presentationMode
+    
+    let truddyURL: URL = URL(string: "https://apps.apple.com/us/app/truddy/id1634475601")!
+    let fieroURL: URL = URL(string: "https://apps.apple.com/br/app/fiero/id1635658054?l=en")!
+    let flappyURL: URL = URL(string: "https://apps.apple.com/us/app/flappychicken/id1584123827")!
+    
     
     var body: some View {
         ZStack {
@@ -24,7 +30,6 @@ struct OtherApps: View {
                         .padding(.bottom, 24)
                         .padding(.top, 48)
                     
-                    Link(destination: URL(string: "https://apps.apple.com/us/app/truddy/id1634475601")!) {
                         VStack {
                             Text("Truddy")
                                 .foregroundColor(.black)
@@ -38,9 +43,11 @@ struct OtherApps: View {
                         .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
                         .background(Color.white)
                         .cornerRadius(16)
-                    }
+                        .onTapGesture {
+                            Analytics.logEvent("truddy", parameters: ["app": "truddy"])
+                            UIApplication.shared.open(truddyURL)
+                        }
                     
-                    Link(destination: URL(string: "https://apps.apple.com/us/app/flappychicken/id1584123827")!) {
                         VStack {
                             Text("Flappy Chicken")
                                 .foregroundColor(.black)
@@ -54,9 +61,11 @@ struct OtherApps: View {
                         .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
                         .background(Color.white)
                         .cornerRadius(16)
-                    }
+                        .onTapGesture {
+                            Analytics.logEvent("flappy", parameters: ["app": "flappy"])
+                            UIApplication.shared.open(flappyURL)
+                        }
                     
-                    Link(destination: URL(string: "https://apps.apple.com/br/app/fiero/id1635658054?l=en")!) {
                         VStack {
                             Text("Fiero")
                                 .foregroundColor(.black)
@@ -71,7 +80,10 @@ struct OtherApps: View {
                         .background(Color.white)
                         .cornerRadius(16)
                         .padding(.bottom, 16)
-                    }
+                        .onTapGesture {
+                            Analytics.logEvent("fiero", parameters: ["app": "fiero"])
+                            UIApplication.shared.open(fieroURL)
+                        }
                     
                     HStack {
                         Image(systemName: "chevron.left")
