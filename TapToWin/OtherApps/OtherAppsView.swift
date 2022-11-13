@@ -15,6 +15,7 @@ struct OtherApps: View {
     let truddyURL: URL = URL(string: "https://apps.apple.com/us/app/truddy/id1634475601")!
     let fieroURL: URL = URL(string: "https://apps.apple.com/br/app/fiero/id1635658054?l=en")!
     let flappyURL: URL = URL(string: "https://apps.apple.com/us/app/flappychicken/id1584123827")!
+    let jumpingBallURL: URL = URL(string: "https://apps.apple.com/us/app/jumping-ball-get-the-coins/id6444294897")!
     
     
     var body: some View {
@@ -30,60 +31,95 @@ struct OtherApps: View {
                         .padding(.bottom, 24)
                         .padding(.top, 48)
                     
-                        VStack {
-                            Text("Truddy")
+                    VStack {
+                        HStack {
+                            
+                            Text("Jumping Ball")
                                 .foregroundColor(.black)
                                 .font(.system(size: 24, weight: .bold))
-                                .padding(.bottom, 4)
                             
-                            Text("Social game to play\nwith your friends")
-                                .foregroundColor(.black)
-                                .font(.system(size: 16, weight: .regular))
-                        }
-                        .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
-                        .background(Color.white)
-                        .cornerRadius(16)
-                        .onTapGesture {
-                            Analytics.logEvent("truddy", parameters: ["app": "truddy"])
-                            UIApplication.shared.open(truddyURL)
-                        }
+                            Text("New")
+                                .foregroundColor(.white)
+                                .font(.system(size: 16, weight: .bold))
+                                .padding(.vertical, 4)
+                                .padding(.horizontal, 8)
+                                .background(Color.green)
+                                .cornerRadius(50)
+                            
+                        }.padding(.bottom, 4)
+                        
+                        Text("Social game to play\nwith your friends")
+                            .foregroundColor(.black)
+                            .font(.system(size: 16, weight: .regular))
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
+                    .background(Color.white)
+                    .cornerRadius(16)
+                    .onTapGesture {
+                        
+                        Analytics.logEvent("jumpingball", parameters: ["app": "jumpingball"])
+                        
+                        UIApplication.shared.open(truddyURL)
+                    }
                     
-                        VStack {
-                            Text("Flappy Chicken")
-                                .foregroundColor(.black)
-                                .font(.system(size: 24, weight: .bold))
-                                .padding(.bottom, 4)
-                            
-                            Text("Fly with the chicken\nand dodge obstacles")
-                                .foregroundColor(.black)
-                                .font(.system(size: 16, weight: .regular))
-                        }
-                        .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
-                        .background(Color.white)
-                        .cornerRadius(16)
-                        .onTapGesture {
-                            Analytics.logEvent("flappy", parameters: ["app": "flappy"])
-                            UIApplication.shared.open(flappyURL)
-                        }
+                    VStack {
+                        Text("Truddy")
+                            .foregroundColor(.black)
+                            .font(.system(size: 24, weight: .bold))
+                            .padding(.bottom, 4)
+                        
+                        Text("Social game to play\nwith your friends")
+                            .foregroundColor(.black)
+                            .font(.system(size: 16, weight: .regular))
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
+                    .background(Color.white)
+                    .cornerRadius(16)
+                    .onTapGesture {
+                        Analytics.logEvent("truddy", parameters: ["app": "truddy"])
+                        UIApplication.shared.open(jumpingBallURL)
+                    }
                     
-                        VStack {
-                            Text("Fiero")
-                                .foregroundColor(.black)
-                                .font(.system(size: 24, weight: .bold))
-                                .padding(.bottom, 4)
-                            
-                            Text("Challenge your friends\nto know who is the best")
-                                .foregroundColor(.black)
-                                .font(.system(size: 16, weight: .regular))
-                        }
-                        .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
-                        .background(Color.white)
-                        .cornerRadius(16)
-                        .padding(.bottom, 16)
-                        .onTapGesture {
-                            Analytics.logEvent("fiero", parameters: ["app": "fiero"])
-                            UIApplication.shared.open(fieroURL)
-                        }
+                    VStack {
+                        Text("Flappy Chicken")
+                            .foregroundColor(.black)
+                            .font(.system(size: 24, weight: .bold))
+                            .padding(.bottom, 4)
+                        
+                        Text("Fly with the chicken\nand dodge obstacles")
+                            .foregroundColor(.black)
+                            .font(.system(size: 16, weight: .regular))
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
+                    .background(Color.white)
+                    .cornerRadius(16)
+                    .onTapGesture {
+                        Analytics.logEvent("flappy", parameters: ["app": "flappy"])
+                        UIApplication.shared.open(flappyURL)
+                    }
+                    
+                    VStack {
+                        Text("Fiero")
+                            .foregroundColor(.black)
+                            .font(.system(size: 24, weight: .bold))
+                            .padding(.bottom, 4)
+                        
+                        Text("Challenge your friends\nto know who is the best")
+                            .foregroundColor(.black)
+                            .font(.system(size: 16, weight: .regular))
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: UIScreen.main.bounds.width * 0.9, height: 150)
+                    .background(Color.white)
+                    .cornerRadius(16)
+                    .padding(.bottom, 16)
+                    .onTapGesture {
+                        Analytics.logEvent("fiero", parameters: ["app": "fiero"])
+                        UIApplication.shared.open(fieroURL)
+                    }
                     
                     HStack {
                         Image(systemName: "chevron.left")

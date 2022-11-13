@@ -22,17 +22,17 @@ struct DifficultySelector: View {
                 ButtonComponent(text: "Easy", variant: .blue, action: {
                     viewModel.difficulty = .easy
                     viewModel.isPresentingView = .gameRun
-                    Analytics.logEvent("Difficulty", parameters: ["selected": "easy"])
+                    Analytics.logEvent("easy", parameters: ["selected": "easy"])
                 })
                 ButtonComponent(text: "Medium", variant: .orange, action: {
                     viewModel.difficulty = .medium
                     viewModel.isPresentingView = .gameRun
-                    Analytics.logEvent("Difficulty", parameters: ["selected": "medium"])
+                    Analytics.logEvent("medium", parameters: ["selected": "medium"])
                 })
                 ButtonComponent(text: "Hard", variant: .red, action: {
                     viewModel.difficulty = .hard
                     viewModel.isPresentingView = .gameRun
-                    Analytics.logEvent("Difficulty", parameters: ["selected": "hard"])
+                    Analytics.logEvent("hard", parameters: ["selected": "hard"])
                 })
                 ButtonComponent(text: "Back", variant: .clearWhite, action: {
                     viewModel.difficulty = .hard
