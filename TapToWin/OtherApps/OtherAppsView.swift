@@ -48,7 +48,7 @@ struct OtherApps: View {
                             
                         }.padding(.bottom, 4)
                         
-                        Text("Social game to play\nwith your friends")
+                        Text("Jumpt to don't touch obstacles and earn money")
                             .foregroundColor(.black)
                             .font(.system(size: 16, weight: .regular))
                             .multilineTextAlignment(.center)
@@ -60,7 +60,7 @@ struct OtherApps: View {
                         
                         Analytics.logEvent("jumpingball", parameters: ["app": "jumpingball"])
                         
-                        UIApplication.shared.open(truddyURL)
+                        UIApplication.shared.open(jumpingBallURL)
                     }
                     
                     VStack {
@@ -79,7 +79,7 @@ struct OtherApps: View {
                     .cornerRadius(16)
                     .onTapGesture {
                         Analytics.logEvent("truddy", parameters: ["app": "truddy"])
-                        UIApplication.shared.open(jumpingBallURL)
+                        UIApplication.shared.open(truddyURL)
                     }
                     
                     VStack {
