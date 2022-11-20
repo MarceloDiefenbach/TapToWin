@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		953CA1C503E66AB67372E20E /* Pods_TapToWin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021FD6FC90810BE9804DDE30 /* Pods_TapToWin.framework */; };
-		DF13B19D2916FF58005474D2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13B19C2916FF58005474D2 /* GameScene.swift */; };
 		DF6A50E7291D414A0079341B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF6A50E6291D414A0079341B /* GoogleService-Info.plist */; };
 		DF6A50E9291D42620079341B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A50E8291D42620079341B /* AppDelegate.swift */; };
 		DF7FBC8C291E806300AF7928 /* OtherAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FBC8B291E806300AF7928 /* OtherAppsView.swift */; };
@@ -21,13 +20,13 @@
 		DFCAB7032916994F00DBCFE4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB7022916994F00DBCFE4 /* Button.swift */; };
 		DFCAB7062916A01400DBCFE4 /* DifficultySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB7052916A01400DBCFE4 /* DifficultySelector.swift */; };
 		DFCAB7082916A18200DBCFE4 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAB7072916A18200DBCFE4 /* GameViewModel.swift */; };
+		DFE4E845292AA76F00219C9A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE4E844292AA76F00219C9A /* GameScene.swift */; };
 		DFE8321829184D2600D1856A /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8321729184D2600D1856A /* WinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		021FD6FC90810BE9804DDE30 /* Pods_TapToWin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapToWin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957E927FA13B2DBE2270153E /* Pods-TapToWin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapToWin.debug.xcconfig"; path = "Target Support Files/Pods-TapToWin/Pods-TapToWin.debug.xcconfig"; sourceTree = "<group>"; };
-		DF13B19C2916FF58005474D2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../../../../Downloads/GameScene.swift; sourceTree = "<group>"; };
 		DF6A50E6291D414A0079341B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF6A50E8291D42620079341B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF7FBC8B291E806300AF7928 /* OtherAppsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAppsView.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		DFCAB7022916994F00DBCFE4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		DFCAB7052916A01400DBCFE4 /* DifficultySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySelector.swift; sourceTree = "<group>"; };
 		DFCAB7072916A18200DBCFE4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		DFE4E844292AA76F00219C9A /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		DFE8321729184D2600D1856A /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		EDBC2CFD04F396F1E58BC1AE /* Pods-TapToWin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapToWin.release.xcconfig"; path = "Target Support Files/Pods-TapToWin/Pods-TapToWin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				DFCAB6FF291697BE00DBCFE4 /* GameView.swift */,
-				DF13B19C2916FF58005474D2 /* GameScene.swift */,
+				DFE4E844292AA76F00219C9A /* GameScene.swift */,
 				DFE8321729184D2600D1856A /* WinView.swift */,
 			);
 			path = Game;
@@ -284,9 +284,9 @@
 				DFCAB6F32916939F00DBCFE4 /* HomeView.swift in Sources */,
 				DFCAB700291697BE00DBCFE4 /* GameView.swift in Sources */,
 				DFC40E5829196CDD0009C733 /* BannerAd.swift in Sources */,
+				DFE4E845292AA76F00219C9A /* GameScene.swift in Sources */,
 				DFCAB6F12916939F00DBCFE4 /* ContentView.swift in Sources */,
 				DFCAB7062916A01400DBCFE4 /* DifficultySelector.swift in Sources */,
-				DF13B19D2916FF58005474D2 /* GameScene.swift in Sources */,
 				DF6A50E9291D42620079341B /* AppDelegate.swift in Sources */,
 				DFCAB7032916994F00DBCFE4 /* Button.swift in Sources */,
 			);
